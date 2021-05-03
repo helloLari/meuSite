@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">helloLari.</td>
+                <td id="navigation">
+                    <a href="#work">Projetos</a>
+                    <a href="#bio">Sobre</a>
+                    <a href="#contact">Contatos</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1>Algumas das tecnologias que estou aprimorando. </h1>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="#work"><i class="fab fa-html5"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="#work"><i class="fab fa-css3"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="#work"><i class="fab fa-js"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="#work"><i class="fab fa-node-js"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="https://github.com/helloLari" target="_blank"><i class="fab fa-github"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:3.0s;"><a class="social" href="https://www.linkedin.com/in/hello-lari" target="_blank"><i class="fab fa-linkedin"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>Projetos</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="img/projeto4.png">
+            <img onclick="magnify($(this).attr('src'))" src="img/projeto2.png">
+            <img onclick="magnify($(this).attr('src'))" src="img/projeto3.png">
+            <img onclick="magnify($(this).attr('src'))" src="img/projeto1.png">
+            <img onclick="magnify($(this).attr('src'))" src="img/projeto5.png">
+            <img onclick="magnify($(this).attr('src'))" src="img/projeto6.png">
+            <img onclick="magnify($(this).attr('src'))" src="img/projeto7.png">
+        </div>
+    </div>
+    <div id="bio">
+        <h1>Sobre</h1>
+        <p>
+        </p>
+        Acredito que mudanças sociais podem ser realizadas a partir do uso da tecnologia. Este universo sempre me despertou muito interesse por isso comecei a estudar através de alguns cursos básicos (Curso em Vídeo e Progr{Amo} da Programaria). Visando mudar de carreira e ampliar meus conhecimentos, decidi me aprofundar através do bootcamp intensivo em Full Stack (ênfase em Front-end) da Edtech SoulCode Academy. HTML5, CSS3, React, Node-js, Bootstrap, jQuery e SQL, são algumas das tecnologias que estou aprimorando. 
+        <p>
+            Através da dedicação, responsabilidade e comprometimento, busco continuamente aprimorar minhas habilidades, aprendendo diferentes linguagens de programação trocando experiências e praticando com outros profissionais. 
+            Sou comunicativa, tenho facilidade para trabalhar em equipe, acredito que compartilhando ideias e conhecimentos crescemos pessoal e profissionalmente.
+        </p>
+    </div>
+    <div id="contact">
+        <h1>Contatos</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div id="inner_div">
+                            <table id="inner_table">
+                                <tr>
+                                    <td><i class="fas fa-phone"></i> &nbsp; +55 (86)99989-7380</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-at"></i> &nbsp; larisse1991@gmail.com</td>
+                                </tr>
+                                 <tr>
+                                   
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-map-marker-alt"></i>
+                                    <div id="address">
+                                        Altos,<br>
+                                        Piauí<br>
+                                        
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="social" href="https://www.linkedin.com/in/hello-lari" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                        <a class="social" href="https://www.instagram.com/hello.lari/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        <a class="social" href="https://github.com/helloLari" target="_blank"><i class="fab fa-github"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <form>
+                            <input type="text" placeholder="nome" required>
+                            <input type="email" placeholder="email" required><br>
+                            <textarea placeholder="Digite aqui sua mensagem" required rows="5"></textarea><br>
+                            <button class="btn_one">Enviar</button>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="footer">
+        © helloLari - Todos os direitos reservados<br><a href="https://github.com/helloLari">Larisse Rodrigues</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
